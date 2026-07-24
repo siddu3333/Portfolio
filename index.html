@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marisiddappa A H | Zero-Gravity Portfolio & Full-Stack Developer</title>
+  <meta name="description" content="Portfolio of Marisiddappa A H - Full-Stack Developer & UI/UX Designer. Interactive Antigravity & Zero-G Physics Experience.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Outfit:wght@400;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Background Space Canvas -->
+  <canvas id="space-canvas"></canvas>
+
+  <!-- Navigation Bar -->
+  <header class="glass-nav">
+    <div class="nav-logo">
+      <span class="logo-symbol">⚛</span>
+      <span class="logo-text">MARISIDDAPPA<span class="text-gradient">.ZERO_G</span></span>
+    </div>
+    
+    <nav class="nav-links">
+      <a href="#hero" class="nav-link active">Home</a>
+      <a href="#antigravity-lab" class="nav-link">Zero-G Lab</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#timeline" class="nav-link">Journey</a>
+      <a href="#certifications" class="nav-link">Certifications</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button id="sound-toggle" class="icon-btn" title="Toggle UI Audio Effects">
+        <i class="fa-solid fa-volume-high"></i>
+      </button>
+      <a href="#contact" class="glow-btn-sm">Hire Me</a>
+      <button class="mobile-menu-btn" id="mobile-toggle">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section id="hero" class="hero-section">
+      <div class="hero-container">
+        
+        <div class="hero-content">
+          <div class="status-badge floating-element">
+            <span class="pulse-dot"></span>
+            <span>ANTIGRAVITY SIMULATION ONLINE</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="text-gradient">Marisiddappa A H</span>
+          </h1>
+
+          <p class="hero-subtitle">
+            <span class="typewriter-prefix">I am a </span>
+            <span id="typewriter" class="highlight-text">Full-Stack Developer</span>
+          </p>
+
+          <p class="hero-bio">
+            Results-driven Computer Science & Design student passionate about crafting high-performance web applications, intuitive UI/UX experiences, and deep-learning solutions in a zero-gravity digital canvas.
+          </p>
+
+          <!-- Contact Quick Badges -->
+          <div class="contact-quick-bar">
+            <a href="mailto:sidduash31@gmail.com" class="quick-chip">
+              <i class="fa-solid fa-envelope"></i> sidduash31@gmail.com
+            </a>
+            <a href="tel:+919663867233" class="quick-chip">
+              <i class="fa-solid fa-phone"></i> +91 9663867233
+            </a>
+            <span class="quick-chip">
+              <i class="fa-solid fa-location-dot"></i> Karnataka, India
+            </span>
+          </div>
+
+          <!-- CTAs & Social Links -->
+          <div class="hero-cta-group">
+            <a href="#antigravity-lab" class="btn btn-primary glow-effect">
+              <i class="fa-solid fa-atom"></i> Explore Zero-G Lab
+            </a>
+            <a href="#projects" class="btn btn-secondary">
+              <i class="fa-solid fa-rocket"></i> View Projects
+            </a>
+            
+            <div class="hero-socials">
+              <a href="https://github.com/siddu3333" target="_blank" rel="noopener" class="social-icon" title="GitHub">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/siddu-ash-4415a7326" target="_blank" rel="noopener" class="social-icon" title="LinkedIn">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Profile Orb / Avatar Frame -->
+        <div class="hero-visual">
+          <div class="avatar-orbit-container">
+            <div class="orbit-ring ring-1"></div>
+            <div class="orbit-ring ring-2"></div>
+            <div class="orbit-planet planet-1" title="Python & AI">🐍</div>
+            <div class="orbit-planet planet-2" title="Full Stack">⚡</div>
+            <div class="orbit-planet planet-3" title="UI/UX">🎨</div>
+
+            <div class="avatar-glass-card">
+              <img src="assets/images/profile.png" alt="Marisiddappa A H" class="profile-img">
+              <div class="card-glow"></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ANTIGRAVITY INTERACTIVE PHYSICS LAB -->
+    <section id="antigravity-lab" class="physics-section">
+      <div class="section-header">
+        <div class="section-tag"><i class="fa-solid fa-magnet"></i> INTERACTIVE PHYSICS ENGINE</div>
+        <h2 class="section-title">Zero-Gravity <span class="text-gradient">Skills & Tools Lab</span></h2>
+        <p class="section-desc">
+          Drag, throw, collide, or adjust gravity! Every element below floats in real-time zero-gravity physics. Click any node for details.
+        </p>
+      </div>
+
+      <!-- Physics Controls Toolbar -->
+      <div class="physics-toolbar glass-panel">
+        <div class="control-group">
+          <label for="gravity-slider">
+            <i class="fa-solid fa-weight-hanging"></i> Gravity: <span id="gravity-value">0.0 G</span>
+          </label>
+          <input type="range" id="gravity-slider" min="0" max="1.5" step="0.05" value="0.0">
+        </div>
+
+        <div class="control-group">
+          <label><i class="fa-solid fa-hand-pointer"></i> Cursor Mode:</label>
+          <div class="toggle-buttons">
+            <button id="mode-repel" class="btn-toggle active" title="Push elements away">
+              <i class="fa-solid fa-arrows-up-to-line"></i> Repel
+            </button>
+            <button id="mode-attract" class="btn-toggle" title="Pull elements towards cursor">
+              <i class="fa-solid fa-compress-arrows-alt"></i> Attract
+            </button>
+          </div>
+        </div>
+
+        <div class="control-actions">
+          <button id="btn-thruster" class="action-btn glow-btn-purple">
+            <i class="fa-solid fa-bolt"></i> Supernova Thruster
+          </button>
+          <button id="btn-freeze" class="action-btn">
+            <i class="fa-solid fa-snowflake"></i> Freeze/Unfreeze
+          </button>
+          <button id="btn-reset-physics" class="action-btn">
+            <i class="fa-solid fa-rotate-left"></i> Re-Center
+          </button>
+        </div>
+      </div>
+
+      <!-- Physics Canvas Container & Overlay Elements -->
+      <div id="physics-container" class="physics-viewport">
+        <!-- Overlay hint -->
+        <div class="physics-hint">
+          <i class="fa-solid fa-hand-fist"></i> Click & Drag any orb | Double-click for action!
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SHOWCASE -->
+    <section id="projects" class="projects-section">
+      <div class="section-header">
+        <div class="section-tag"><i class="fa-solid fa-diagram-project"></i> INNOVATION & DESIGN</div>
+        <h2 class="section-title">Academic & <span class="text-gradient">Featured Projects</span></h2>
+        <p class="section-desc">Explore deep-learning computer vision models and full-stack software built for impact.</p>
+      </div>
+
+      <div class="projects-grid">
+        
+        <!-- Featured Major Project -->
+        <div class="project-card featured-card glass-panel" data-project="cattle">
+          <div class="featured-badge"><i class="fa-solid fa-star"></i> Featured ML Project (2024-2025)</div>
+          <div class="project-visual">
+            <div class="visual-gradient-bg"></div>
+            <div class="visual-icon-box"><i class="fa-solid fa-brain"></i></div>
+            <div class="metric-chip"><i class="fa-solid fa-chart-line"></i> >90% Accuracy</div>
+          </div>
+
+          <div class="project-info">
+            <span class="project-category">Deep Learning & Computer Vision</span>
+            <h3 class="project-title">Indian Cattle Breed Detection</h3>
+            <p class="project-desc">
+              Developed a deep learning image classification system using Python and TensorFlow to accurately predict cattle breeds (Gir, Red Sindhi, Kankrej, Jersey, Hallikar) using an EfficientNet convolutional neural network.
+            </p>
+
+            <div class="tech-tags">
+              <span class="tag">Python</span>
+              <span class="tag">TensorFlow</span>
+              <span class="tag">EfficientNet</span>
+              <span class="tag">CNN</span>
+              <span class="tag">Computer Vision</span>
+            </div>
+
+            <div class="project-card-footer">
+              <button class="btn-card-details" onclick="openProjectModal('cattle')">
+                View Architecture & Details <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: Web Full Stack Internship -->
+        <div class="project-card glass-panel" data-project="fullstack">
+          <div class="project-visual">
+            <div class="visual-icon-box"><i class="fa-solid fa-code"></i></div>
+            <div class="metric-chip"><i class="fa-solid fa-layer-group"></i> Full Stack</div>
+          </div>
+          <div class="project-info">
+            <span class="project-category">EduSkills Internship</span>
+            <h3 class="project-title">Full-Stack Web Applications</h3>
+            <p class="project-desc">
+              Created responsive, user-centric web applications utilizing HTML5, CSS3, JavaScript, Node.js, and MongoDB with clean glassmorphism UI design.
+            </p>
+            <div class="tech-tags">
+              <span class="tag">HTML5/CSS3</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">Node.js</span>
+              <span class="tag">MongoDB</span>
+            </div>
+            <div class="project-card-footer">
+              <button class="btn-card-details" onclick="openProjectModal('fullstack')">
+                View Project Details <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: AI-ML Virtual Internship -->
+        <div class="project-card glass-panel" data-project="aiml">
+          <div class="project-visual">
+            <div class="visual-icon-box"><i class="fa-brands fa-google"></i></div>
+            <div class="metric-chip"><i class="fa-solid fa-microchip"></i> Machine Learning</div>
+          </div>
+          <div class="project-info">
+            <span class="project-category">Google AI-ML Internship</span>
+            <h3 class="project-title">Predictive AI Pipelines</h3>
+            <p class="project-desc">
+              Engineered data preprocessing pipelines, model evaluation metrics, and supervised learning algorithms for intelligent data analytics.
+            </p>
+            <div class="tech-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Scikit-Learn</span>
+              <span class="tag">Pandas</span>
+              <span class="tag">Data Science</span>
+            </div>
+            <div class="project-card-footer">
+              <button class="btn-card-details" onclick="openProjectModal('aiml')">
+                View Project Details <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- TIMELINE SECTION (EDUCATION & INTERNSHIPS) -->
+    <section id="timeline" class="timeline-section">
+      <div class="section-header">
+        <div class="section-tag"><i class="fa-solid fa-graduation-cap"></i> CAREER & EDUCATION</div>
+        <h2 class="section-title">My Journey <span class="text-gradient">& Experience</span></h2>
+        <p class="section-desc">Academic excellence and professional internship milestones.</p>
+      </div>
+
+      <div class="timeline-container">
+        
+        <!-- Timeline Item 1 -->
+        <div class="timeline-item left">
+          <div class="timeline-icon"><i class="fa-solid fa-laptop-code"></i></div>
+          <div class="timeline-content glass-panel">
+            <span class="timeline-date">2023 - 2027 (Present)</span>
+            <h3 class="timeline-title">Bachelor of Engineering (BE) in Computer Science & Design</h3>
+            <h4 class="timeline-subtitle">Srinivas Institute of Technology, Mangaluru (VTU)</h4>
+            <p class="timeline-body">
+              Specializing in Full-Stack Web Development, UI/UX Design, Algorithms, and Artificial Intelligence.
+            </p>
+            <div class="timeline-badge"><i class="fa-solid fa-award"></i> CGPA: 7.1 / 10</div>
+          </div>
+        </div>
+
+        <!-- Timeline Item 2 -->
+        <div class="timeline-item right">
+          <div class="timeline-icon"><i class="fa-solid fa-briefcase"></i></div>
+          <div class="timeline-content glass-panel">
+            <span class="timeline-date">Internship</span>
+            <h3 class="timeline-title">Web Full Stack Developer Intern</h3>
+            <h4 class="timeline-subtitle">EduSkills Foundation</h4>
+            <p class="timeline-body">
+              Built end-to-end full-stack web solutions, backend API integration using Node.js & MongoDB, and modern frontend design systems.
+            </p>
+          </div>
+        </div>
+
+        <!-- Timeline Item 3 -->
+        <div class="timeline-item left">
+          <div class="timeline-icon"><i class="fa-brands fa-google"></i></div>
+          <div class="timeline-content glass-panel">
+            <span class="timeline-date">Virtual Internship</span>
+            <h3 class="timeline-title">Google AI-ML Virtual Intern</h3>
+            <h4 class="timeline-subtitle">EduSkills & Google AI</h4>
+            <p class="timeline-body">
+              Trained on TensorFlow, neural network architectures, model tuning, and automated computer vision workflows.
+            </p>
+          </div>
+        </div>
+
+        <!-- Timeline Item 4 -->
+        <div class="timeline-item right">
+          <div class="timeline-icon"><i class="fa-solid fa-school"></i></div>
+          <div class="timeline-content glass-panel">
+            <span class="timeline-date">2023 & 2021</span>
+            <h3 class="timeline-title">Pre-University & Secondary Education</h3>
+            <h4 class="timeline-subtitle">Devika PU College & Rotary English Medium School, Ranebennur</h4>
+            <p class="timeline-body">
+              <strong>PUC (2023):</strong> 71.16% | Science & Mathematics<br>
+              <strong>SSLC (2021):</strong> 73.92% | High School Distinction
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS & EXTRACURRICULAR -->
+    <section id="certifications" class="certs-section">
+      <div class="section-header">
+        <div class="section-tag"><i class="fa-solid fa-certificate"></i> CREDENTIALS & HONORS</div>
+        <h2 class="section-title">Certifications & <span class="text-gradient">Hackathons</span></h2>
+      </div>
+
+      <div class="certs-grid">
+        
+        <div class="cert-card glass-panel">
+          <div class="cert-icon"><i class="fa-solid fa-cloud"></i></div>
+          <div class="cert-info">
+            <span class="cert-year">2024</span>
+            <h3>Cloud Computing Certification</h3>
+            <p>ETHNOTEC</p>
+            <span class="cert-tag">AWS & Cloud Infra</span>
+          </div>
+        </div>
+
+        <div class="cert-card glass-panel">
+          <div class="cert-icon"><i class="fa-brands fa-node-js"></i></div>
+          <div class="cert-info">
+            <span class="cert-year">2025</span>
+            <h3>NodeJS Professional Certification</h3>
+            <p>IBM</p>
+            <span class="cert-tag">Backend & Asynchronous JS</span>
+          </div>
+        </div>
+
+        <div class="cert-card glass-panel">
+          <div class="cert-icon"><i class="fa-solid fa-trophy"></i></div>
+          <div class="cert-info">
+            <span class="cert-year">2025</span>
+            <h3>Srinathon 24hrs Hackathon Volunteer</h3>
+            <p>Organized by SSOSC</p>
+            <span class="cert-tag">Hackathon & Team Leadership</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Languages & Hobbies -->
+      <div class="extras-container glass-panel">
+        <div class="extra-block">
+          <h3><i class="fa-solid fa-language"></i> Languages Spoken</h3>
+          <div class="pills-group">
+            <span class="pill"><i class="fa-solid fa-comment"></i> English (Conversation)</span>
+            <span class="pill"><i class="fa-solid fa-heart"></i> Kannada (Native)</span>
+            <span class="pill"><i class="fa-solid fa-comments"></i> Hindi (Fluent)</span>
+          </div>
+        </div>
+
+        <div class="extra-block">
+          <h3><i class="fa-solid fa-palette"></i> Creative Interests</h3>
+          <div class="pills-group">
+            <span class="pill"><i class="fa-solid fa-pen-nib"></i> Drawing & Painting</span>
+            <span class="pill"><i class="fa-solid fa-baseball-bat-ball"></i> Cricket</span>
+            <span class="pill"><i class="fa-solid fa-utensils"></i> Culinary Arts / Cooking</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact-section">
+      <div class="section-header">
+        <div class="section-tag"><i class="fa-solid fa-paper-plane"></i> GET IN TOUCH</div>
+        <h2 class="section-title">Let's Launch A <span class="text-gradient">Project Together</span></h2>
+        <p class="section-desc">Open for Software Engineering, Full-Stack, and UI/UX Design opportunities.</p>
+      </div>
+
+      <div class="contact-container">
+        
+        <div class="contact-info-card glass-panel">
+          <h3>Direct Connections</h3>
+          <p>Feel free to reach out via email, phone, or connect on LinkedIn and GitHub.</p>
+
+          <div class="contact-details">
+            <div class="detail-item">
+              <div class="detail-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div>
+                <span class="detail-label">Email Address</span>
+                <a href="mailto:sidduash31@gmail.com" class="detail-value">sidduash31@gmail.com</a>
+                <button class="copy-btn" onclick="copyEmail()" title="Copy Email">
+                  <i class="fa-regular fa-copy"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="detail-item">
+              <div class="detail-icon"><i class="fa-solid fa-phone"></i></div>
+              <div>
+                <span class="detail-label">Phone Number</span>
+                <a href="tel:+919663867233" class="detail-value">+91 9663867233</a>
+              </div>
+            </div>
+
+            <div class="detail-item">
+              <div class="detail-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div>
+                <span class="detail-label">Location</span>
+                <span class="detail-value">Ranebennur, Karnataka, India</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="social-connect-bar">
+            <a href="https://github.com/siddu3333" target="_blank" rel="noopener" class="btn-social">
+              <i class="fa-brands fa-github"></i> GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/siddu-ash-4415a7326" target="_blank" rel="noopener" class="btn-social">
+              <i class="fa-brands fa-linkedin"></i> LinkedIn
+            </a>
+          </div>
+        </div>
+
+        <!-- Interactive Contact Form -->
+        <form id="contact-form" class="contact-form glass-panel" onsubmit="handleFormSubmit(event)">
+          <h3>Transmit Message</h3>
+          
+          <div class="form-group">
+            <label for="user-name">Your Name</label>
+            <input type="text" id="user-name" required placeholder="Enter your full name">
+          </div>
+
+          <div class="form-group">
+            <label for="user-email">Your Email</label>
+            <input type="email" id="user-email" required placeholder="name@example.com">
+          </div>
+
+          <div class="form-group">
+            <label for="user-message">Message / Opportunity Details</label>
+            <textarea id="user-message" rows="4" required placeholder="Tell me about your project or role..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary glow-effect btn-block" id="btn-send">
+            <i class="fa-solid fa-shuttle-space"></i> Transmit Into Zero-G
+          </button>
+          
+          <div id="form-feedback" class="feedback-msg"></div>
+        </form>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- PROJECT DETAIL MODAL -->
+  <div id="project-modal" class="modal-backdrop" onclick="closeProjectModal(event)">
+    <div class="modal-content glass-panel" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="closeProjectModal()"><i class="fa-solid fa-xmark"></i></button>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+  <!-- External Matter.js Physics Engine -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.19.0/matter.min.js"></script>
+  
+  <!-- Custom Application Scripts -->
+  <script src="js/space-background.js"></script>
+  <script src="js/physics.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
